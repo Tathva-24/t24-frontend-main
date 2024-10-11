@@ -1,34 +1,34 @@
 import React from "react";
-import Arrow from "./arrow";
+import Arrow from "./arrowbutton";
 import styles from "./description.module.css";
 
-const InnerDescription = () => {
+const Wheels = ({num , heading, text}) => {
     return (
-        <div className="bg-[#ECECEC]">
-            <div className={`flex justify-between`}>
-                <div className={`text-black text-[9em] ${styles.heading}`}>
-                    03
+        <div className={`bg-[#ECECEC] px-[40px] pb-[25px] rounded-[30px] ${styles.component}`} >
+            <div className="flex justify-between flex-wrap">
+                <div className={`text-black text-[150px] leading-[150px] ${styles.heading}`}>
+                    {num}
                 </div>
 
-                <div className={`text-black text-[3em] ${styles.heading}`}>
-                    About
+                <div className={`text-black text-[50px] pt-[5%] ${styles.heading}`}>
+                    <h1>{heading}</h1>
                 </div>
             </div>
+
             <hr className="border-black"/>
-            <div className="bottom">
-                <div className={`text-black ${styles.description}`}>
-                    Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earnprizes worth 7 lakhs!
+
+            <div className={`relative text-black text-[20px] pt-3 ${styles.description}`}>
+                {text}
+                <div className="float-right ml-[20px] mt-[10px]">
+                    <Arrow/>
                 </div>
-                <div className="box text-black font-bold">
+                <div className="absolute bottom-0 left-0 text-black font-bold">
                     ◻◻◻
                 </div>
-                <div className="border border-black p-4">
-                    <Arrow />
-                </div>
+                <div className="clear-both"></div>
             </div>
-        </div>
-
+        </div>   
     )
 }
 
-export default InnerDescription;
+export default Wheels;

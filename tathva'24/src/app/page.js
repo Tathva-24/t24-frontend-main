@@ -1,10 +1,9 @@
-import Image from "next/image";
-import Wheels from "./wheels/page"
+import Wheels from "./wheels/page";
 
 export default function Home() {
-  return (
-    <div>
-      <Wheels />
-    </div>
-  );
+    return (
+        <div>
+            <Wheels/>
+        </div>
+    );
 }
