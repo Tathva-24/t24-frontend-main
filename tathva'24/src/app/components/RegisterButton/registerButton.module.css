@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Pricedown";
+    src: url("/fonts/pricedown-bl.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gta{
+    font-family: "Pricedown" sans-serif;
+}
