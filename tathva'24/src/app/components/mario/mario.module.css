@@ -1,0 +1,92 @@
+.marioMan {
+    left: 33%;
+    top: 36%;
+    z-index: 10;
+  }
+  .turtle{
+   
+    z-index: 9;
+  
+  }
+  
+  .UP{
+    left: 33%;
+    top: 35%;
+    position: sticky;
+    z-index: -1;
+  }
+  
+  
+  @media (max-width: 798px), (max-width: 749px) {
+    .marioMan {
+      left: 30%;
+      top: 35%;
+    }
+  }
+  
+  @media (max-width: 746px) {
+    .marioMan {
+      left: 30%;
+      top: 33%;
+    }
+  }
+  
+  @media (max-width: 666px) {
+    .marioMan {
+      left: 32%;
+      top: 33%;
+    }
+    .marioman {
+      width: 85%;
+      height: 6rem;
+    }
+    .turtle {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .marioMan {
+      left: 28%;
+      top: 36%;
+    }
+    .marioman {
+      width: 75%;
+      height: 4.5rem;
+    }
+    .turtle {
+      width: 60%;
+      height: 1.2rem;
+    }
+  }
+  @media (max-width: 535px) {
+    .marioMan {
+      left: 28%;
+      top: 34%;
+    }
+    .marioman {
+      width: 75%;
+      height: 4.5rem;
+    }
+    .turtle {
+      width: 60%;
+      height: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .marioMan {
+      left: 25%;
+      top: 33%;
+    }
+    .marioman {
+      width: 75%;
+      height: 3.5rem;
+    }
+    .turtle {
+      width: 60%;
+      height: 1.2rem;
+    }
+  }
+  
+  
