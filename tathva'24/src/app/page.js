@@ -1,4 +1,4 @@
-import Page from "./components/wheels_description/page";
+import Page from "./wheels/page";
 
 export default function Home() {
     return (

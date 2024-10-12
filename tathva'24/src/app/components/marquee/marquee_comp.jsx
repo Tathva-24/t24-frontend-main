@@ -35,6 +35,7 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         duration: 1.5,
         delay: 0.5,
         ease: "power2.out",
+        y: "-30",
       }
     );
   }, [marqueeRef]);
