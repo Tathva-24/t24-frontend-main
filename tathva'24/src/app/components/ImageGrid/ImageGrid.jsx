@@ -1,19 +1,50 @@
 import React from 'react';
-import style from './ImageGrid.module.css';
-import GridImg from './GridImg';
 import Image from 'next/image';
-import Car from './InnerPages/concert_green.webp'; // Ensure this path is correct
 
 const ImageGrid = () => {
-  const img = Car;
-  const img1 = Car;
-  const img2 = Car;
-  const img3 = Car;
 
   return (
-    <div className='bg-red-600 w-64 h-64'>
-      <div className="w-full h-full">
-        <Image src={img} alt="Grid" className="object-cover w-full h-full" />
+    <div className='w-full h-full flex flex-col'>
+      <div className="one flex w-full h-64 relative ratio ">
+        <div className="relative w-[50%] h-full flex">
+          <Image 
+            src={'/InnerPages/concert_green.webp'} 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="bottom" 
+            alt="Grid" 
+            className="p-5 " 
+          />
+          <Image 
+            src={'/InnerPages/concert_green.webp'} 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="bottom" 
+            alt="Grid" 
+            className="p-5 " 
+          />
+        </div>
+      </div>
+      
+      <div className="one flex w-full h-64 relative">
+        <div className="relative w-[50%] h-full flex">
+          <Image 
+            src={'/InnerPages/concert_green.webp'} 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="bottom" 
+            alt="Grid" 
+            className="p-5 " 
+          />
+          <Image 
+            src={'/InnerPages/concert_green.webp'} 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="bottom" 
+            alt="Grid" 
+            className="p-5 " 
+          />
+        </div>
       </div>
     </div>
   );
