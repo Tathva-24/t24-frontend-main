@@ -2,25 +2,24 @@ import React from 'react';
 import Image from 'next/image';
 
 const ImageGrid = () => {
-
-  const one = "public/InnerPages/concert_green.webp";
-  const two = "public/InnerPages/drone_tesal";
-  const three = "public/InnerPages/expopic.webp";
-  const four = "public/InnerPages/red_car.webp";
+  const one = "/InnerPages/concert_green.webp";
+  const two = "/InnerPages/drone_tesal.webp";
+  const three = "/InnerPages/expopic.webp";
+  const four = "/InnerPages/red_car.jpg";
 
   return (
-    <div className='w-full h-full flex flex-col mx-2'>
-      <div className="one flex w-full h-64 relative ratio ">
-        <div className="relative w-[50%] h-full flex">
-          <img src={one} alt="" className='w-max'/>
-          <img src={two} alt="" className='w-max'/>
-        </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mx-auto">
+      <div className="relative border-4 rounded-[12px] md:rounded-[30px] overflow-hidden">
+        <img src={one} alt="" className="object-cover w-full h-64"/>
       </div>
-      <div className="one flex w-full h-64 relative">
-        <div className="relative w-[50%] h-full flex">
-        <img src={three} alt="" className='w-max'/>
-        <img src={four} alt="" className='w-max'/>
-        </div>
+      <div className="relative border-4 rounded-[12px] md:rounded-[30px] overflow-hidden">
+        <img src={two} alt="" className="object-cover w-full h-64"/>
+      </div>
+      <div className="relative border-4 rounded-[12px] md:rounded-[30px] overflow-hidden">
+        <img src={three} alt="" className="object-cover w-full h-64"/>
+      </div>
+      <div className="relative border-4 rounded-[12px] md:rounded-[30px] overflow-hidden">
+        <img src={four} alt="" className="object-cover w-full h-64"/>
       </div>
     </div>
   );

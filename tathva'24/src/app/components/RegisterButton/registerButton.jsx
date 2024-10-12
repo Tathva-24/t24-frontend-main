@@ -13,3 +13,4 @@ const Button = ({ colorOne, colorTwo, colorThree, colorFour }) => {
 };
 
 export default Button;
+    

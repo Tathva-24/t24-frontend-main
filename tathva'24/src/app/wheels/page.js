@@ -7,14 +7,19 @@ const page = () => {
   return (
     <div className='w-screen h-screen overflow-x-hidden'>
         <Marquee element1={"RoboWars"} element2={"RoboWars"} color1={"red"} color2={"black"} />
-        <div className="w-full p-10 flex border border-red-500">
-        <div className='desc w-[60%]'>
-            <InnerDescription  num="03" heading="About" text="Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!" />
-        </div>    
-        <div className='gridImg w-[30%] h-full border border-red-500'>
-            <ImageGrid />
-        </div>
-        </div> 
+        <div className="w-full p-10 flex justify-between">
+  <div className='desc w-[55%]'>
+    <InnerDescription 
+      num="03" 
+      heading="About" 
+      text="Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!" 
+    />
+  </div>    
+  <div className='gridImg w-[40%] h-full mx-3'>
+    <ImageGrid />
+  </div>
+</div>
+
     </div>
   )
 }
