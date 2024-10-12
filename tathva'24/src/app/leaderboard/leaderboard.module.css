@@ -1,0 +1,12 @@
+/* .item::after{
+    content:"";
+    position: absolute;
+    height: 120%;
+    width:  107%;
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(to bottom right, purple, pink);
+    border-radius: 1000px;
+    z-index: -100;
+    left: -3.5%;
+    top: -10%;
+} */
