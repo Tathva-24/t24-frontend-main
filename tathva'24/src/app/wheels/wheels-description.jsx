@@ -1,5 +1,5 @@
 import React from "react";
-import Arrow from "./arrow";
+import Arrow from "../components/wheels_description/arrow";
 import styles from "./description.module.css";
 
 const Wheels = ({num , heading, text}) => {

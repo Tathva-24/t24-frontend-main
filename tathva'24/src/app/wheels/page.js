@@ -1,5 +1,5 @@
 import React from 'react';
-import Wheels from '../components/wheels_description/wheels-description';
+import Wheels from './wheels-description';
 
 const page = () => {
   return (
