@@ -14,6 +14,7 @@ const InnerDescription = ({ num, heading, text }) => {
           {num}
         </div>
 
+
         <div
           className={`text-black text-[1.5rem] md:text-[50px]  ${styles.heading}`}
         >
