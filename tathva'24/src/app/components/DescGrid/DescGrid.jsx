@@ -2,18 +2,28 @@ import React from "react";
 import ImageGrid from "../ImageGrid/ImageGrid";
 import InnerDescription from "../InnerDescription/InnerDescription";
 
-const DescGrid = ({ num, heading, text }) => {
-  return ( 
-    <div className="w-full p-10 flex flex-col gap-4 md:gap-0 justify-between md:flex-row">
-      <div className='desc md:w-[55%]'>
-        <InnerDescription 
-          num={num}
-          heading={heading}
-          text={text}
+const DescGrid = ({ num, heading, text, imageProps, direction }) => {
+  const flexDirection = direction === 1 ? "lg:flex-row" : "lg:flex-row-reverse";
+
+  return (
+    <div
+      className={`w-full px-10 flex flex-col ${flexDirection} justify-between`}
+    >
+      <div className="desc w-full lg:w-[55%] mb-6 lg:mb-0 ml-3">
+        <InnerDescription num={num} heading={heading} text={text} />
+      </div>
+
+      <div className="gridImg w-full lg:w-[40%] h-full mx-3">
+        <ImageGrid
+          img1={imageProps.img1}
+          img2={imageProps.img2}
+          img3={imageProps.img3}
+          img4={imageProps.img4}
+          text1={imageProps.text1}
+          text2={imageProps.text2}
+          text3={imageProps.text3}
+          text4={imageProps.text4}
         />
-      </div>    
-      <div className='gridImg md:w-[40%] h-full mx-3'>
-        <ImageGrid />
       </div>
     </div>
   );

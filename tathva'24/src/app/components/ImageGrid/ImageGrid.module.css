@@ -1,23 +1,23 @@
 @font-face {
-    font-family: "Pricedown";
-    src: url("/fonts/pricedown-bl.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .about{
-    font-family: "Pricedown", sans-serif;
-    /* font-size: 9rem; */
-  }
-  
-  .marquee {
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.5); /* Initially scaled down */
-    will-change: opacity, transform; /* Optimize animation performance */
-  }
-  
-  .marqueecont {
-    /* Other styles for the marquee container */
-    overflow: hidden;
-    position: relative;
-  }
+  font-family: "Pricedown";
+  src: url("/fonts/pricedown-bl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about {
+  font-family: "Pricedown", sans-serif;
+  /* font-size: 9rem; */
+}
+
+.marquee {
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.5); /* Initially scaled down */
+  will-change: opacity, transform; /* Optimize animation performance */
+}
+
+.marqueecont {
+  /* Other styles for the marquee container */
+  overflow: hidden;
+  position: relative;
+}

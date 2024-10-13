@@ -35,13 +35,15 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         duration: 1.5,
         delay: 0.5,
         ease: "power2.out",
-        y: "-30",
+        y: "-15",
       }
     );
   }, [marqueeRef]);
 
   return (
-    <div className={`relative overflow-hidden flex items-center justify-center ${styles.marqueecont}`}>
+    <div
+      className={`relative overflow-hidden flex items-center justify-center ${styles.marqueecont}`}
+    >
       <div
         ref={marqueeRef}
         className={`${styles.marquee} whitespace-nowrap flex`}
@@ -76,7 +78,6 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         >
           {element2}
         </span>
-        
       </div>
     </div>
   );
