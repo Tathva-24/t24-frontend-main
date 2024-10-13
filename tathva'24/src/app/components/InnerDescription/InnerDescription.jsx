@@ -5,7 +5,7 @@ import styles from "./description.module.css";
 const InnerDescription = ({ num, heading, text }) => {
   return (
     <div
-      className={`bg-[#ECECEC] w-[100%] px-[5%] pb-[3%] rounded-[12px] md:rounded-[30px] `}
+      className={`bg-[#ECECEC] w-[100%] px-[5%] pb-[3%] rounded-[12px] md:rounded-[30px] h-[22vw]`}
     >
       <div className="flex justify-between">
         <div
@@ -13,7 +13,6 @@ const InnerDescription = ({ num, heading, text }) => {
         >
           {num}
         </div>
-
 
         <div
           className={`text-black text-[1.5rem] md:text-[50px]  ${styles.heading}`}
