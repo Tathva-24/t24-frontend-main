@@ -1,35 +1,63 @@
-import React from 'react'
-import InnerDescription from '../components/InnerDescription/InnerDescription'
-import Marquee from '../components/marquee/marquee_comp'
-import ImageGrid from '../components/ImageGrid/ImageGrid'
-import Button from '../components/RegisterButton/registerButton'
-import DescGrid from '../components/DescGrid/DescGrid'
+import React from "react";
+import Marquee from "../components/marquee/marquee_comp";
+import DescGrid from "../components/DescGrid/DescGrid";
+import RegPrice from "../components/RegPrice/RegPrice";
 
 const page = () => {
-  return (
-    <div className='w-screen h-screen overflow-x-hidden'>
-      <DescGrid num="03"
-                heading="About"
-                text="Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!"
-      />          
-        {/* <Marquee element1={"auto"} element2={"summit"} color1={"red"} color2={"black"} />
-        <div className='w-full px-10'>
-          <Button colorOne={"#b60203"} colorTwo={"#f89fa4"} colorThree={"#ffffff"} ></Button>
-        </div>
-        <div className="w-full p-10 flex justify-between">
-        <div className='desc w-[55%]'>
-          <InnerDescription 
-            num="03" 
-            heading="About" 
-            text="Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!" 
-          />
-        </div>    
-        <div className='gridImg w-[40%] h-full mx-3'>
-          <ImageGrid />
-        </div>
-      </div> */}
-    </div>
-  )
-}
+  const element1 = "auto";
+  const element2 = "summit";
+  const color1 = "red";
+  const color2 = "black";
 
-export default page
+  const imageProps = {
+    img1: "/InnerPages/concert_green.webp",
+    img2: "/InnerPages/drone_tesal.webp",
+    img3: "/InnerPages/expopic.webp",
+    img4: "/InnerPages/red_car.jpg",
+    text1: "gaming conclave",
+    text2: "drone racing",
+    text3: "expo",
+    text4: "automotive summit",
+  };
+
+  const bigImg = "/InnerPages/red_car.jpg";
+
+  const colorOne = "#b60203";
+  const colorTwo = "#f89fa4";
+  const colorThree = "#ffffff";
+
+  const num = "03";
+  const heading = "About";
+  const text =
+    "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
+
+  return (
+    <div className="w-screen h-screen overflow-x-hidden">
+      <Marquee
+        element1={element1}
+        element2={element2}
+        color1={color1}
+        color2={color2}
+      />
+
+      <RegPrice
+        bigImg={bigImg}
+        colorOne={colorOne}
+        colorTwo={colorTwo}
+        colorThree={colorThree}
+      />
+
+      <DescGrid
+        num={num}
+        heading={heading}
+        text={text}
+        imageProps={imageProps}
+        colorOne={colorOne}
+        colorTwo={colorTwo}
+        colorThree={colorThree}
+      />
+    </div>
+  );
+};
+
+export default page;
