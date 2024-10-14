@@ -27,7 +27,7 @@ const FooterMobile = () => {
   }
 
   return (
-    <div className="flex flex-col justify-end h-[100vh] box-border relative overflow-y-hidden">
+    <div className="flex flex-col justify-end h-[100vh] box-border relative ">
       <div className={styles.foot_mob}>
         <img
           src="/screw.svg"
@@ -110,8 +110,8 @@ const FooterMobile = () => {
             />
           </div>
         </div>
-
-        <div className="flex max-h-44">
+        <div className="flex max-h-44 relative">
+          {/* Left side */}
           <div className="w-[47%] flex justify-center items-center">
             <img
               src="/button.svg"
@@ -119,23 +119,89 @@ const FooterMobile = () => {
               className="w-full h-4/5 object-fit"
             />
           </div>
-          <div className="w-[45%] flex justify-between items-center border-l-[1px]">
+
+          {/* Right side with social buttons */}
+          <div className="w-[45%] flex justify-center items-center border-l-[1px] p-5 relative">
             <img
-              src="/social_buttons.svg"
-              alt="My Icon"
-              className="w-full h-98 object-fit"
+              src="/footerPadMobile.svg"
+              alt="Social Buttons"
+              className="w-auto h-80 object-contain"
             />
-          </div>
-          <div className="w-[8%] flex flex-col items-center relative">
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[11px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[22px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[33px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[44px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[55px] h-[8px] w-[50px] my-[6px]"></div>
+
+            {/* Icon Group overlaying social_buttons.svg */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              {/* Adjusting positions for each icon */}
+
+              {/* Twitter Icon */}
+              <div
+                className="absolute"
+                style={{
+                  top: "15%",
+                  left: "40%",
+                  transform: "translate(-10%, 10%)",
+                }}
+              >
+                <a href="">
+                  <img
+                    src="/Footer/twitter.svg"
+                    alt="Twitter"
+                    className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                  />
+                </a>
+              </div>
+
+              {/* Facebook Icon */}
+              <div
+                className="absolute"
+                style={{
+                  top: "40%",
+                  left: "60%",
+                  transform: "translate(-10%, -10%)",
+                }}
+              >
+                <img
+                  src="/Footer/face.svg"
+                  alt="Facebook"
+                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                />
+              </div>
+
+              {/* Up Icon */}
+              <div
+                className="absolute"
+                style={{
+                  top: "60%",
+                  left: "40%",
+                  transform: "translate(-10%, -10%)",
+                }}
+              >
+                <img
+                  src="/Footer/upBtn.svg"
+                  alt="Up"
+                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                />
+              </div>
+
+              {/* Instagram Icon */}
+              <div
+                className="absolute"
+                style={{
+                  top: "40%",
+                  left: "20%",
+                  transform: "translate(-10%, -10%)",
+                }}
+              >
+                <img
+                  src="/Footer/insta.svg"
+                  alt="Instagram"
+                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="flex justify-center mr-5 overflow-y-hidden">
+        <div className="flex justify-center mr-5 ">
           <div className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0">
             <img
               src="/bottom.svg"
