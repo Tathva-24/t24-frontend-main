@@ -136,7 +136,7 @@ function Flappybird({length, birdimage, pipeimage}) {
 
         {/* bottom pipe  */}
         <div
-          className="absolute bg-center-bottom"
+          className="absolute bg-center-bottom bg-black"
           style={{
             height: `${length - gap - objHeight}px`,
             width: `${pipewidth}px`,
