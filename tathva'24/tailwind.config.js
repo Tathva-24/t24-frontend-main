@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        presstart : ["Press Start 2P","sans-serif"],
+        presstart : ['"Press Start 2P"',"sans-serif"],
         pricedown : ["Pricedown","sans-serif"]
       },
       height: {

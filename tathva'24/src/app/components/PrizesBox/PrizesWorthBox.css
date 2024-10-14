@@ -3,9 +3,10 @@
   --neon : #b6f001;
 }
 .prize {
+    
     --d: 30px; 
     --b: 4px;  
-    --c: orange; 
+    --c: white ; 
     --f: 0px;
     --gc: var(--c) calc(50% + var(--b) * 0.707), #ffffff00 0;
     --gl: var(--c), #0000 40% 60%, var(--c);
@@ -45,3 +46,4 @@
     background-repeat: no-repeat;
     position: relative;
 }
+
