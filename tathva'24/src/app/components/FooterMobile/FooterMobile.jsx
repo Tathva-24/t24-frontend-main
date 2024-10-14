@@ -121,11 +121,11 @@ const FooterMobile = () => {
           </div>
 
           {/* Right side with social buttons */}
-          <div className="w-[45%] flex justify-center items-center border-l-[1px] p-5 relative">
+          <div className="w-[45%] flex justify-center items-center border-l-[1px] relative">
             <img
               src="/footerPadMobile.svg"
               alt="Social Buttons"
-              className="w-auto h-80 object-contain"
+              className="w-[80%] md:w-[35%] h-auto object-contain"
             />
 
             {/* Icon Group overlaying social_buttons.svg */}
@@ -134,67 +134,64 @@ const FooterMobile = () => {
 
               {/* Twitter Icon */}
               <div
-                className="absolute"
-                style={{
-                  top: "15%",
-                  left: "40%",
-                  transform: "translate(-10%, 10%)",
-                }}
+                className="
+    absolute 
+    top-[15%] left-[40%] 
+    transform translate-x-[-10%] translate-y-[10%]
+    sm:translate-x-[-20%] sm:translate-y-[15%] 
+    md:translate-x-[40%] md:translate-y-[20%]"
               >
                 <a href="">
                   <img
                     src="/Footer/twitter.svg"
                     alt="Twitter"
-                    className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                    className="h-12 w-12  md:h-10 md:w-10 object-contain cursor-pointer hover:scale-95"
                   />
                 </a>
               </div>
 
               {/* Facebook Icon */}
               <div
-                className="absolute"
-                style={{
-                  top: "40%",
-                  left: "60%",
-                  transform: "translate(-10%, -10%)",
-                }}
+                className="
+    absolute 
+    top-[40%] left-[60%] 
+    transform translate-x-[-10%] translate-y-[-10%]
+    md:translate-x-[-45%] md:translate-y-[-10%]" // Use md: for custom re10onsiveness if needed
               >
                 <img
                   src="/Footer/face.svg"
                   alt="Facebook"
-                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                  className="h-12 w-12  md:h-10 md:w-10 md:h-10 md:w-10 object-contain cursor-pointer hover:scale-95"
                 />
               </div>
 
               {/* Up Icon */}
               <div
-                className="absolute"
-                style={{
-                  top: "60%",
-                  left: "40%",
-                  transform: "translate(-10%, -10%)",
-                }}
+                className="
+    absolute 
+    top-[60%] left-[40%] 
+    transform translate-x-[-10%] translate-y-[-10%]
+    md:translate-x-[40%] md:translate-y-[-20%]"
               >
                 <img
                   src="/Footer/upBtn.svg"
                   alt="Up"
-                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                  className="h-12 w-12 md:h-10 md:w-10 object-contain cursor-pointer hover:scale-95"
                 />
               </div>
 
               {/* Instagram Icon */}
               <div
-                className="absolute"
-                style={{
-                  top: "40%",
-                  left: "20%",
-                  transform: "translate(-10%, -10%)",
-                }}
+                className="
+    absolute 
+    top-[40%] left-[20%] md:left-[30%]
+    transform translate-x-[-10%] translate-y-[-10%]
+    md:translate-x-[40%] md:translate-y-[-10%]"
               >
                 <img
                   src="/Footer/insta.svg"
                   alt="Instagram"
-                  className="h-12 w-12 object-contain cursor-pointer hover:scale-95"
+                  className="h-12 w-12 md:h-10 md:w-10 object-contain cursor-pointer hover:scale-95"
                 />
               </div>
             </div>
