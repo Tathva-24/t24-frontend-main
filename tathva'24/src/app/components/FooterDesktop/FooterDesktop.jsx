@@ -4,10 +4,10 @@ const FooterDesktop = () => {
   return (
     <div className='w-full h-[75vh] absolute bottom-0 overflow-x-hidden'>
         <div className="bg-[#313234] h-full w-full rounded-t-3xl relative">
-            <img src="/screw.svg" alt="My Icon" className="h-10 object-fit z-5 absolute bottom-4 right-5" />
-            <img src="/screw.svg" alt="My Icon" className="h-10 object-fit z-5 absolute bottom-4 left-5 " />
-            <img src="/screw.svg" alt="My Icon" className="h-10 object-fit z-5 absolute top-4 right-4" />
-            <img src="/screw.svg" alt="My Icon" className="h-10 object-fit z-5 absolute top-4 left-5" />
+            <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute bottom-4 right-5" />
+            <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute bottom-4 left-5 " />
+            <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute top-4 right-4" />
+            <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute top-4 left-5" />
 
             <img
             src="/upper1.svg"
@@ -18,10 +18,18 @@ const FooterDesktop = () => {
             <img
             src="/upper2.svg"
             alt="My Icon"
-            className="w-[20%] object-fit z-[-2] absolute top-[-5%]  left-0"
+            className="w-[20%] object-fit z-[-2] absolute top-[-5%] left-0"
             />
 
-            <div className=" h-[50%] aspect-square flex justify-between items-center border-l-[2px] border-b-[2px] rounded-bl-[100px] border-[#BCC3CB] absolute right-0 top-0">
+            <div className=" border-[#BCC3CB] border-r-[3px] absolute w-[35%] h-[70%] top-0 left-0 "></div>
+            <div className=" border-[#BCC3CB] border-t-[3px] border-r-[3px] absolute w-[35%] h-[30%] bottom-0 left-0  "></div>
+            <div className=" border-[#BCC3CB] border-t-[3px] border-r-[3px] absolute w-[20%] h-[60%] bottom-0 left-0 rounded-tr-[100px] bg-[#313234]">
+                <div className="cont w-full h-full relative flex">
+                    <img src="/Footer/CtrlL.svg"  alt="My Icon" className="m-10 absolute w-[70%] top-0 right-0 aspect-square object-fit " />
+                </div>
+            </div>
+
+            <div className=" h-[50%] aspect-square flex justify-between items-center border-l-[3px] border-b-[3px] rounded-bl-[100px] border-[#BCC3CB] absolute right-0 top-0">
                 <div className="cont relative w-full h-full ]">
                     {/* <img src="/Footer/FooterSocialBack.webp"  alt="My Icon" className="absolute w-[141%]  aspect-square object-fit " /> */}
 
