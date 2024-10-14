@@ -1,0 +1,47 @@
+
+:root {
+  --neon : #b6f001;
+}
+.prize {
+    --d: 30px; 
+    --b: 4px;  
+    --c: orange; 
+    --f: 0px;
+    --gc: var(--c) calc(50% + var(--b) * 0.707), #ffffff00 0;
+    --gl: var(--c), #0000 40% 60%, var(--c);
+    
+    clip-path: polygon(
+      var(--d) 0,
+      calc(50% - 50px) 0,  /* Mid-section cut start */
+      calc(50% - 50px) var(--b), /* Vertical start for gap */
+      calc(50% + 50px) var(--b), /* Vertical end for gap */
+      calc(50% + 50px) 0, /* Mid-section cut end */
+      calc(100% - var(--d)) 0,
+      100% var(--d),
+      100% calc(100% - var(--d)),
+      calc(100% - var(--d)) 100%, 
+      calc(50% + 50px) 100%, /* Mid-section cut start at the bottom */
+      calc(50% + 50px) calc(100% - var(--f)), /* Vertical start for bottom gap */
+      calc(50% - 50px) calc(100% - var(--f)), /* Vertical end for bottom gap */
+      calc(50% - 50px) 100%, /* Mid-section cut end at the bottom */
+      var(--d) 100%, 
+      0 calc(100% - var(--d)), 
+      0 var(--d)
+    );
+    
+    background:
+      /* the corners */
+      linear-gradient(135deg, var(--gc)) 0 0 / var(--d) var(--d),
+      linear-gradient(45deg, var(--gc)) 0 100% / var(--d) var(--d),
+      linear-gradient(-45deg, var(--gc)) 100% 100% / var(--d) var(--d),
+      linear-gradient(-135deg, var(--gc)) 100% 0 / var(--d) var(--d),
+      
+      /* the lines */
+      linear-gradient(90deg, var(--gl)) top / 100% var(--b),
+      linear-gradient(90deg, var(--gl)) bottom / 100% var(--b),
+      linear-gradient(0deg, var(--gl)) left / var(--b) 100%,
+      linear-gradient(0deg, var(--gl)) right / var(--b) 100%;
+    
+    background-repeat: no-repeat;
+    position: relative;
+}
