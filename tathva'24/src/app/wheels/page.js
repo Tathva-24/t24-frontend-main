@@ -31,7 +31,7 @@ const page = () => {
   const text =
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
 
-  const regPriceDirection = 1; // 1 for row, 0 for row-reverse
+  const regPriceDirection = 0; // 1 for row, 0 for row-reverse
   const descGridDirection = 0; // 1 for row, 0 for row-reverse
 
   return (
