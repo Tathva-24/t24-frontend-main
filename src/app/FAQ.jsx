@@ -41,13 +41,13 @@ const faqData = [
     title: "LECTURES",
     items: [
       {
-        question: "How to register for workshops?",
+        question: "How to register for lectures?",
         answer: "You can register through the official Tathva'24 website.",
       },
       {
-        question: "Are the workshops free?",
+        question: "Are the lectures free?",
         answer:
-          "Some workshops have a registration fee. Please check the event details.",
+          "Some lectures may have a registration fee. Please check the event details.",
       },
     ],
   },
@@ -55,40 +55,36 @@ const faqData = [
     title: "EVENTS",
     items: [
       {
-        question: "How to register for workshops?",
+        question: "How to register for events?",
         answer: "You can register through the official Tathva'24 website.",
       },
       {
-        question: "Are the workshops free?",
+        question: "Are the events free?",
         answer:
-          "Some workshops have a registration fee. Please check the event details.",
+          "Some events may have a registration fee. Please check the event details.",
       },
     ],
   },
 ];
 
-const FAQItem = ({ question, answer, isVisible, toggle }) => {
-  return (
-    <div className="mb-4 rounded-lg overflow-hidden">
-      <div
-        onClick={toggle}
-        className="cursor-pointer flex justify-between items-center text-gray-50 text-2xl md:text-3xl p-4 font-question"
-      >
-        <h3 className="flex-grow">{question}</h3>
-      </div>
-      <motion.div
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: isVisible ? "auto" : 0, opacity: isVisible ? 1 : 0 }}
-        transition={{ duration: 0.5 }}
-        className="overflow-hidden px-4 pb-4"
-      >
-        <p className="text-gray-400 text-base md:text-xl font-answer">
-          {answer}
-        </p>
-      </motion.div>
+const FAQItem = ({ question, answer, isVisible, toggle }) => (
+  <div className="mb-4 rounded-lg overflow-hidden">
+    <div
+      onClick={toggle}
+      className="cursor-pointer flex justify-between items-center text-gray-50 text-2xl md:text-3xl p-4 font-question"
+    >
+      <h3 className="flex-grow">{question}</h3>
     </div>
-  );
-};
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: isVisible ? "auto" : 0, opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
+      className="overflow-hidden px-4 pb-4"
+    >
+      <p className="text-gray-400 text-base md:text-xl font-answer">{answer}</p>
+    </motion.div>
+  </div>
+);
 
 const FAQSection = ({
   title,
@@ -129,14 +125,13 @@ const FAQSection = ({
         />
       </motion.h2>
       {items.map((item, index) => (
-        <div key={index}>
-          <FAQItem
-            question={item.question}
-            answer={item.answer}
-            isVisible={visibleIndex === index}
-            toggle={() => toggleVisibility(index)}
-          />
-        </div>
+        <FAQItem
+          key={index} // Ensure a key prop is provided
+          question={item.question}
+          answer={item.answer}
+          isVisible={visibleIndex === index}
+          toggle={() => toggleVisibility(index)}
+        />
       ))}
     </div>
   );
@@ -177,7 +172,7 @@ const TracingBeam = ({ children }) => {
               // Move the circle to the hovered section
               if (hoveredSection === index) {
                 gsap.to(circleRef.current, {
-                  y: rect.top - 20, // Adjust y position for the circle
+                  y: rect.top + window.scrollY - 20, // Adjust y position for the circle
                   duration: 0.3,
                 });
               }
@@ -187,7 +182,10 @@ const TracingBeam = ({ children }) => {
       });
     });
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      ScrollTrigger.getAll().forEach((t) => t.kill()); // Kill all triggers on cleanup
+    };
   }, [beamHeight, hoveredSection]);
 
   return (
