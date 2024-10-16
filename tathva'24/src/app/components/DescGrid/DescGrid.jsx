@@ -7,13 +7,13 @@ const DescGrid = ({ num, heading, text, imageProps, direction }) => {
 
   return (
     <div
-      className={`w-full px-10 flex flex-col ${flexDirection} justify-between`}
+      className={`w-full px-10 flex flex-col lg:flex-row justify-between`}
     >
-      <div className="desc w-full lg:w-[55%] mb-6 lg:mb-0 ml-3">
+      <div className="desc w-full lg:w-[55%] mb-6 lg:mb-0">
         <InnerDescription num={num} heading={heading} text={text} />
       </div>
 
-      <div className="gridImg w-full lg:w-[40%] h-full mx-3">
+      <div className="gridImg w-full lg:w-[40%] h-full">
         <ImageGrid
           img1={imageProps.img1}
           img2={imageProps.img2}
