@@ -1,0 +1,48 @@
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font {
+  font-family: Pixelify Sans;
+  font-size: x-large;
+}
+
+.border {
+  border-bottom: 5% solid rgb(186, 19, 19);
+}
+
+.gameoverimg {
+  background-image: url(../../../public/gameover.png);
+  width: 1000px;
+  height: 120px;
+  background-repeat: no-repeat;
+}
+
+.bgimg {
+  background-image: url(../../../public/contactBg.png);
+  height: 1100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactimg {
+  background-image: url(../../../public/contact.png);
+  height: 8vh;
+  width: 400px;
+  background-repeat: no-repeat;
+}
+
+.messageimg {
+  background-image: url(../../../public/message.png);
+  background-repeat: no-repeat;
+  height: 8vh;
+  width: 400px;
+}
+
+.submitbtn {
+  background-color: rgb(186, 19, 19);
+}

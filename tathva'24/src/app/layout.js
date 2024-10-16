@@ -14,7 +14,8 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Tathva 24",
-  description: "Welcome to Tathva 24, South India's largest techno-management fest",
+  description:
+    "Welcome to Tathva 24, South India's largest techno-management fest",
 };
 
 export default function RootLayout({ children }) {
@@ -25,6 +26,12 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="./MainLogo.png" />
         <link rel="stylesheet" href="/fonts/fonts.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
