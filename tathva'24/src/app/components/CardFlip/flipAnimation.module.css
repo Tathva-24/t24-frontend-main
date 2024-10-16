@@ -1,18 +1,16 @@
-/* Add this CSS to your styles file */
-.backface-hidden {
-  backface-visibility: hidden;
+/* index.css */
+
+@font-face {
+  font-family: "CyberwayRiders";
+  src: url("/fonts/cyberway-riders.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
 }
 
-.rotate-y-180 {
-  transform: rotateY(180deg);
+.letters{ 
+  font-family: "CyberwayRiders", sans-serif;
 }
 
-/* Optional: Add transition effects for smoother animation */
-.transition-transform {
-  transition: transform 1s ease-in-out; /* Increase duration for a more pronounced effect */
-}
 
-/* Optional: Add a hover effect for better interactivity */
-.flex:hover .rotate-y-180 {
-  transform: rotateY(0deg);
-}
+
