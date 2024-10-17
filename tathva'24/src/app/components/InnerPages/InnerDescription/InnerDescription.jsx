@@ -5,19 +5,19 @@ import styles from "./description.module.css";
 const InnerDescription = ({ num, heading, text }) => {
   return (
     <div
-      className={`bg-[#ECECEC] w-[100%] px-[5%] pb-[3%] rounded-[12px] md:rounded-[30px] `}
+      className={`bg-[#ECECEC] w-[100%] h-auto px-[5%] pb-[20] rounded-[12px] md:rounded-[30px]`}
     >
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         {/* Number Section */}
         <div
-          className={`text-black text-[2rem] leading-[2rem] md:text-[6vw] lg:text-[4vw] md:leading-[6vw] lg:leading-[4vw] ${styles.heading}`}
+          className={`head text-black lg:text-[8vw] text-[10vw] leading-[2rem] md:leading-[6vw] lg:leading-[4vw] ${styles.heading}`}
         >
           {num}
         </div>
 
         {/* Heading Section */}
         <div
-          className={`text-black text-[1.5rem] md:text-[5vw] lg:text-[3vw] ${styles.heading}`}
+          className={`text-black lg:text-[5vw] md:text-[7vw] text-[8vw] ${styles.heading}`}
         >
           {heading}
         </div>
@@ -27,14 +27,14 @@ const InnerDescription = ({ num, heading, text }) => {
 
       {/* Description Section */}
       <div
-        className={`relative text-black text-[9px] md:text-[18px] lg:text-[16px] xl:text-[22px] 2xl:text-[24px] pt-[2%] ${styles.description}`}
+        className={`text-black h-[65%] lg:text-[1.8vw] pt-[2%] ${styles.description}`}
       >
         {text}
-
+        <div className=" text-black font-bold">◻◻◻</div>    
         {/* Arrow and Corners */}
-        <div className="float-right w-[20%] aspect-square group relative">
+        { /* <div className="float-right w-[20%] aspect-square group relative">
           <div className="w-full aspect-square relative">
-            {/* Top-left corner */}
+            {/* Top-left corner 
             <svg
               className="absolute top-0 left-0 w-[20%] h-[20%]"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const InnerDescription = ({ num, heading, text }) => {
               />
             </svg>
 
-            {/* Top-right corner */}
+            {/* Top-right corner }
             <svg
               className="absolute top-0 right-0 w-[20%] h-[20%]"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const InnerDescription = ({ num, heading, text }) => {
               />
             </svg>
 
-            {/* Bottom-left corner */}
+            {/* Bottom-left corner }
             <svg
               className="absolute bottom-0 left-0 w-[20%] h-[20%]"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const InnerDescription = ({ num, heading, text }) => {
               />
             </svg>
 
-            {/* Bottom-right corner */}
+            {/* Bottom-right corner }
             <svg
               className="absolute bottom-0 right-0 w-[20%] h-[20%]"
               xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +93,9 @@ const InnerDescription = ({ num, heading, text }) => {
                 d="m40.898.697-.17 28.97L30.21 40.147l-30-.05"
               />
             </svg>
-          </div>
+          </div> */ }
 
-          {/* Arrow Center */}
+          {/* Arrow Center }
           <div className="flex justify-center items-center w-full h-full absolute top-0 left-0">
             <div className=" w-[80%] h-[40%] relative">
               <Arrow />
@@ -104,8 +104,6 @@ const InnerDescription = ({ num, heading, text }) => {
         </div>
 
         {/* Small square marker */}
-        <div className="absolute bottom-0 left-0 text-black font-bold">◻◻◻</div>
-
         <div className="clear-both"></div>
       </div>
     </div>
