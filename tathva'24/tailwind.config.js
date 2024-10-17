@@ -6,7 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: 
+    {
+    fontFamily: {
+      valorant: ['valorant', 'sans-serif'], // Add the Valorant font
+      PlusJakartaSans: ['PlusJakartaSans', 'sans-serif'], // Add the Plus Jakarta Sans font
+    },
       height: {
         '115': '115%', // Add a custom height of 60vh
         '95': '95%',
