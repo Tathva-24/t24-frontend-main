@@ -54,7 +54,7 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         opacity: 1,
         scale: 1,
         duration: 1.5,
-        delay: 0.5,
+        delay: 0,
         ease: "power2.out",
         y: "-15",
       }
@@ -62,8 +62,10 @@ export default function Marquee({ element1, element2, color1, color2 }) {
   }, [marqueeRef]);
 
   return (
-    <div className={`relative overflow-hidden flex h-min items-center justify-center m-0 ${styles.marqueecont}`}>
-      <div ref={marqueeRef} className={`${styles.marquee} whitespace-nowrap flex text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]   `}>
+    <div className={`relative overflow-hidden flex items-center justify-center -my-0 lg:-my-6 ${styles.marqueecont}`}>
+      <div ref={marqueeRef} className={`${styles.marquee} whitespace-nowrap flex justify-center items-center h-min text-[4rem] sm:text-[3rem] md:text-[4rem] lg:text-[6rem] xl:text-[8rem]   `}
+         style={{FontSize: 'clamp(1.5rem, 3vw, 2.5rem)'}}
+      >
 
         <span
           style={{ color: color1 }}

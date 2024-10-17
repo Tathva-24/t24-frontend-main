@@ -1,5 +1,5 @@
 import React from 'react'
-import Marquee from '../components/marquee/marquee_comp'
+import Marquee from '../components/InnerPages/marquee/marquee_comp'
 
 const page = () => {
   return (
