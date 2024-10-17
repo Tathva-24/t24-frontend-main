@@ -27,7 +27,7 @@ const page = () => {
 
       <div className='w-[90vw] flex-col md:flex-row md:h-[35vh] h-min-[35vh] m-2 flex items-center justify-between'>
           <div className='w-full md:w-[34%] md:h-full h-[20vh]  '>
-              <div className="relative flex justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]">
+              <div className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]">
                 <img src="/left_top.jpeg"       alt="idk" className='absolute  top-0    left-0  xl:w-20 xl:h-20 lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6'/>
                 <img src="/right_top.jpeg"      alt="idk" className='absolute  top-0    right-0 xl:w-20 xl:h-20 lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6'/>
                 <img src="/right_bottom.jpeg"   alt="idk" className='absolute  bottom-0 right-0 xl:w-20 xl:h-20 lg:w-10 lg:h-10 md:w-8 md:h-8 w-6 h-6'/>
