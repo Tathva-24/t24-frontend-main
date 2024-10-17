@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily : {
+        jakarta: ['"Plus Jakarta Sans"',"sans-serif"],
+        pricedown: ["Pricedown","sans-serif"]
+      },
       height: {
         '115': '115%', // Add a custom height of 60vh
         '95': '95%',
