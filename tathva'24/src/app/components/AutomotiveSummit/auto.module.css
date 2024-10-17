@@ -12,4 +12,19 @@
     right: 0;
     box-shadow: 0px -10px 40px rgba(0, 0, 0, 0.8);
   }
-  
+  .imgg{
+    background-blend-mode: color-burn;
+  }
+  .down{
+    height: 21vh;
+    width: 100vw;
+  margin-right: 5%;
+  }
+  .links{
+    padding-top:1%;
+    /* letter-spacing: 0.2rem; */
+    font-size: 0.685rem;
+  }
+  .main h1{
+    font-family: valorant;
+  }

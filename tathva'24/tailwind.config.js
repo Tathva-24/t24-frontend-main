@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        valorant: ['Valorant', 'sans-serif'], // Ensure this matches your font definition
+        supply:['supply']
+      },
       height: {
         '115': '115%', // Add a custom height of 60vh
         '95': '95%',

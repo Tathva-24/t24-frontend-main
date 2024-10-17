@@ -1,17 +1,17 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import './auto.module.css'; // Assuming this has any additional custom styling
+import styles from './auto.module.css'; // Assuming this has any additional custom styling
 
 const cars = [
   {
     name: 'Exotic Executioner',
     model: 'Bolide',
-    image: './car1.jpeg',
+    image: './car1.png',
   },
   {
-    name: 'Car 2',
+    name: 'Porsche',
     model: 'Model 2',
-    image: './car2.jpeg',
+    image: './car3.png',
   },
 ];
 
@@ -28,14 +28,16 @@ const AutomotiveSummit = () => {
   const currentCar = cars[currentCarIndex];
 
   return (
-    <><div className='h-[3vw] bg-black'></div>
+    <>
+
+    <div className={`flex flex-col bg-black  h-screen relative ${styles.main}`}>
     <div
-      className=" relative flex flex-col  min-h-screen bg-black text-white text-center bg-[url('/carbg.svg')] bg bg-no-repeat bg-contain"
+      className="flex flex-col w-full text-white text-center  h-[80vh] bg-[url('/carbg.svg')] bg-no-repeat bg-cover  mt-[5vh]"
     >
       {/* Border Around the Entire Center Content */}
-      <div className="rounded-lg p-6 w-full sm:w-[80%] max-w-4xl mx-auto mt-[10vh] scale-125">
+      <div className="rounded-lg p-6 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
         {/* Header */}
-        <h1 className="text-3xl sm:text-4xl font-bold mt-4 mb-6">
+        <h1 className="font-valorant text-3xl sm:text-4xl font-bold  ">
           AUTOMOTIVE 'SUMMIT
         </h1>
 
@@ -101,44 +103,45 @@ const AutomotiveSummit = () => {
             <img
               src={currentCar.image}
               alt={currentCar.name}
-              className="w-48 h-36 sm:w-36 sm:h-20 object-contain mb-4"
+              className={`w-48 h-36 sm:w-36 sm:h-20 object-contain mb-4 ${styles.imgg}`}
             />
-            <p className="text-sm sm:text-base p-1">{currentCar.name}</p>
+            <p className="text-sm sm:text-base p-1 font-supply ">{currentCar.name}</p>
             <p className="text-xs">{currentCar.model}</p>
           </div>
         </div>
       
         {/* Explore Button Inside the Border */}
         <div className="justify-center bg-[url('/explore_show.svg')] bg-contain">
-          <button className="mt-6 mb-6 px-6 py-2 bg-red-600 rounded-full text-lg font-semibold">
+          <button className="mt-6 mb-6 px-6 py-2 bg-red-600 rounded-full text-lg font-semibold font-valorant">
             EXPLORE THE SHOW
           </button>
         </div>
       </div>
-
+      </div>
       {/* Navigation Links */}
-      <div className="relative w-full flex justify-center mt-20">
+      <div className="relative w-full flex justify-center align-center">
         {/* Curved background with SVG */}
-        <div className="absolute bottom-0 left-0 right-0 w-full h-20 bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain"></div>
+        <div className={`flex fixed bottom-0  w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}></div>
         {/* Navigation Links */}
-        <div className="relative z-10 flex justify-center space-x-4 mt-2 text-white">
-          <a href="#!" className="px-4 py-2 text-xs sm:text-sm border-x border-gray-600">
+        <div className={`relative z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}>
+          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x-r border-gray-600">
             Motography
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-sm border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
             Rally
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-sm border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
             Autoshow
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-sm border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
             Stunts
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-sm border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x-l border-gray-600">
             Superbikes
           </a>
         </div>
       </div>
+ 
     </div></>
   );
 };

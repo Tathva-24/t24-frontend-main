@@ -2,11 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "Pricedown";
-    src: url("/fonts/pricedown-bl.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
-  
-  
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Font face for 'Valorant' font */
+@font-face {
+  font-family: "valorant";
+  src: url('/fonts/Valorant.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: supply;
+  src: url('/fonts/supply2.ttf') format('truetype');
+}
+/* Font face for 'Plus Jakarta Sans' */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/Plus-Jakarta-Sans-Regular.woff2') format('woff2'),
+       url('/fonts/Plus-Jakarta-Sans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
