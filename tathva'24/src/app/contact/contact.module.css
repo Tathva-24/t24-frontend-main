@@ -1,24 +1,23 @@
 .pixelify-sans {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-.textfont{
-    font-family:"Pixelify Sans" ;
-    font-size: xx-large;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.formfont{
-    font-family:"Pixelify Sans" ;
-    font-size: x-large;
+.textfont {
+  font-family: "Pixelify Sans";
+  font-size: xx-large;
 }
 
-.submitbg{
-    background-image: url(../../../public/submit.svg);
-    background-repeat: no-repeat;
-    width: 50%;
-    padding-bottom: 10px;
+.formfont {
+  font-family: "Pixelify Sans";
+  font-size: x-large;
 }
 
+.submitbg {
+  background-image: url(../../../public/submit.svg);
+  background-repeat: no-repeat;
+  width: 50%;
+  padding-bottom: 10px;
+}
