@@ -33,6 +33,12 @@ const page = () => {
           <div className='m-2  h-full w-[61%] p-2 rounded  '>
             <div className='w-[99%] h-full border-4 border-white rounded-2xl overflow-clip relative object-cover'><img src={'/grid/red_car.jpg'} className='object-cover absolute bottom-0 fill h-full w-full ' /></div>
           </div>
+
+          <div className='w-full h-[40%] flex justify-between items-center p-2 '>
+          <div className='h-full w-full rounded'>
+            <InnerDescription num="02" heading="About" text={desc}/>
+          </div>
+        </div>
         </div>
 
         {/* Mobile */}
@@ -53,6 +59,12 @@ const page = () => {
             </div>
           </div>
 
+          <div className='w-full h-[40%] flex justify-between items-center p-2 '>
+          <div className='h-full w-full rounded'>
+            <InnerDescription num="02" heading="About" text={desc}/>
+          </div>
+        </div>
+
         </div>
 
         {/* Mobile */}
@@ -68,11 +80,12 @@ const page = () => {
           </div>
         </div> */} 
 
-        <div className='w-full h-[40%] flex justify-between items-center p-2 '>
+        {/* <div className='w-full h-[40%] flex justify-between items-center p-2 '>
           <div className='h-full w-full rounded'>
             <InnerDescription num="02" heading="About" text={desc}/>
           </div>
-        </div>
+        </div> */}
+
       </div>
 
     </div>
