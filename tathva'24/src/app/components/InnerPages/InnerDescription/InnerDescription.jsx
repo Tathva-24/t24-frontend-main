@@ -1,6 +1,7 @@
 import React from "react";
 import Arrow from "./arrow";
 import styles from "./description.module.css";
+import Link from "next/link";
 
 const InnerDescription = ({ num, heading, text }) => {
   return (
@@ -14,8 +15,9 @@ const InnerDescription = ({ num, heading, text }) => {
 
       <div className={`text-black h-min-[65%] lg:text-[1.8vw] pt-[2%] ${styles.description}`} >
       {text}
-      <div className=" text-black font-bold absolute bottom-4 ">◻◻◻</div>    
-        <img className="h-[100px] aspect-square absolute bottom-2 right-2 " src="/InnerPages/arrow_border.svg" />
+      <div className=" text-black font-bold absolute bottom-4 ">◻◻◻</div>  
+        <Link href={"#"} ><img className="h-[100px] hover:scale-110 transition-all aspect-square absolute bottom-2 right-2 " src="/InnerPages/arrow_border.svg" /></Link>  
+        
       </div>
     </div>
   );
