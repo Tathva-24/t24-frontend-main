@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('/fonts/ValorantFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .val {
+    font-family: 'ValorantFont', sans-serif;
+  }
+  
+ @media (max-width: 900px) {
+    .val {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 10px; 
+    }
+  
+    
+    .text-7xl {
+      font-size: 3rem; /* Smaller size for mobile */
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .grid {
+      margin-left: 2; /* Set margin-left to 0 */
+    }
+    .ml-40 {
+        margin-left: 2 ;
+      }
+  }
+  
+  
+  
+  .hover-bg:hover {
+    background-image: url('/menubg.svg'); 
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+  }
+  
+  .hover-bg:hover .text-3xl {
+    color: white; 
+  }
