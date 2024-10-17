@@ -22,16 +22,16 @@ const page = () => {
         <div className='w-full hidden h-[40%] lg:flex justify-between items-center p-2 '>
           <div className='m-2 h-full w-[34%] p-2 rounded flex flex-col justify-between items-center '>
             <div className='w-full h-[49%] m-1 flex justify-between' >
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Expo</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>ProShow</p> <img src={'/grid/concert.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
             </div>
             <div className='w-full h-[49%] m-1 flex justify-between' >
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Gaming Conclave</p> <img src={'/grid/arcade.jpg'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Drone Racing</p> <img src={'/grid/drone.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
             </div>
           </div>
           <div className='m-2  h-full w-[64%] p-2 rounded  '>
-            <div className='w-[99%] h-full border-4 border-white rounded-2xl overflow-clip'><img src={'/grid/arcade.jpg'} className=' object-cover fill h-full w-full ' /></div>
+            <div className='w-[99%] h-full border-4 border-white rounded-2xl overflow-clip'><img src={'/grid/red_car.jpg'} className=' object-cover fill h-full w-full ' /></div>
           </div>
         </div>
 
@@ -39,17 +39,17 @@ const page = () => {
         <div className='w-full lg:hidden h-[50%] flex flex-col justify-between items-center p-2 mb-2'>
 
           <div className='m-2 h-[38%] w-full rounded flex items-center justify-center'>
-            <div className='w-[99%] h-full border-4 border-white rounded-3xl overflow-clip'><img src={'/grid/arcade.jpg'} className=' object-cover fill h-full w-full ' /></div>
+            <div className='w-[99%] h-full border-4 border-white rounded-3xl overflow-clip'><img src={'/grid/red_car.jpg'} className=' object-cover fill h-full w-full ' /></div>
           </div>
 
           <div className='m-2  h-[58%] w-full rounded flex flex-col items-center justify-center'>
             <div className='w-full h-[49%] m-1 flex justify-between' >
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center '>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center '>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown '>Expo</p> <img src={'/grid/expo.webp'}  className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Concert</p> <img src={'/grid/concert.webp'}  className=' object-cover fill h-full w-full ' /></div>
             </div>
             <div className='w-full h-[49%] m-1 flex justify-between' >
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center '>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
-              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center '>Arcade</p> <img src={'/grid/expo.webp'} style={{ fontFamily: '"Pricedown", sans-serif' }} className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Arcade</p> <img src={'/grid/arcade.jpg'}  className=' object-cover fill h-full w-full ' /></div>
+              <div className='w-[49%] border-4 border-white rounded-2xl overflow-clip relative'> <p className='w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown'>Drone Racing</p> <img src={'/grid/drone.webp'}  className=' object-cover fill h-full w-full ' /></div>
             </div>
           </div>
 
