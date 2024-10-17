@@ -1,4 +1,4 @@
-import Workshop from "./workshop/slider";
+import Workshop from "./workshop/index";
 
 export default function Home() {
   return (

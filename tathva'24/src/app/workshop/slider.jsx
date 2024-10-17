@@ -1,4 +1,4 @@
-"use client";
+//"use client";
 
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
@@ -81,35 +81,37 @@ const Home = () => {
       </div>
       <div className={`bg-[white] mr-8 rounded-xl text-white ${styles.rightPanel}`}>
       
-        <h2
+        <div
           className={`bg-[black] pr-8 pl-10 rounded-xl text-center w-[98%] mt-[10px] hover:bg-[#7E82E1] cursor-pointer ${styles.text}`}
           onMouseEnter={() => handleMouseEnter('WORKSHOPS')}
           onMouseLeave={handleMouseLeave}
         >
           <Link href="/workshops">WORKSHOPS</Link>
-        </h2>
+        </div>
         
         
-        <h2
+        <div
           className={`bg-[black] pr-8 pl-10 rounded-xl text-center w-[98%] hover:bg-[#ACCF99] cursor-pointer ${styles.text}`}
           onMouseEnter={() => handleMouseEnter('LECTURES')}
           onMouseLeave={handleMouseLeave}
         >
           <Link href="/workshops">LECTURES</Link>
-        </h2>
+        </div>
         
         
-        <h2
+        <div
           className={`bg-[black] pr-8 pl-10 rounded-xl text-center w-[98%] mb-[10px] hover:bg-[#F6B25E] cursor-pointer ${styles.text}`}
           onMouseEnter={() => handleMouseEnter('COMPETITION')}
           onMouseLeave={handleMouseLeave}
         >
           <Link href="/workshops">COMPETITION</Link>
-        </h2>
+        </div>
         
       </div>
     </div>
   );
+  
+  
 };
 
 export default Home;

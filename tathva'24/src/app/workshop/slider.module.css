@@ -84,8 +84,78 @@
   
 }
 
-@media (max-width: 600px) {
+/* Wrap existing styles in media queries for responsiveness */
+/* General styling for the container */
+.container {
+  display: flex;
+  flex-direction: row; /* Align items in a row by default */
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
 
+/* Styling for individual boxes */
+.box {
+  background-color: white; /* Background for boxes */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside boxes */
+  text-align: center; /* Center text */
+  color: black; /* Text color */
+  width: 30%; /* Width of boxes */
+  min-width: 250px; /* Minimum width for boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+  transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+/* Scale effect on hover */
+.box:hover {
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+/* Responsive design for screens below 1024px */
+/* Other CSS rules remain unchanged */
+
+/* Adjust layout for screens below 1024px */
+@media (max-width: 1024px) {
+  .leftPanel {
+    display: none; /* Hide the left panel */
+  }
+
+  .rightPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .rightPanel .text {
+    font-size: 4rem; /* Enlarge font for smaller screens */
+    width: 100%; /* Use full width for images and text */
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Add styles for the enlarged image container in the right panel */
+  .imageContainer {
+    width: 100%; /* Full width for images in the right panel */
+    height: auto; /* Let height adjust according to the image */
+    margin-bottom: 20px;
+  }
+
+  .bannerImage {
+    width: 100%; /* Ensure images take up full width */
+    height: auto;
+    object-fit: contain; /* Keep image aspect ratio */
+    border-radius: 12px; /* Slightly larger border-radius */
+    margin-bottom: 10px; /* Spacing between images */
+  }
+}
+
+/* Existing media query for smaller screens (below 600px) remains unchanged */
+@media (max-width: 600px) {
   .imageContainer {
     width: 90%; /* Use more width for smaller screens */
     height: auto; /* Allow height to adjust based on width */
