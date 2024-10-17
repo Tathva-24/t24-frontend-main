@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div className="h-[400vh] relative overflow-clip bg-black">
         <Hero />
-        <Carousal />
+        {/* <Carousal /> */}
         <ExpoPage />
       <div className="footer h-max w-full absolute bottom-0 left-0">
         <FooterDesktop />

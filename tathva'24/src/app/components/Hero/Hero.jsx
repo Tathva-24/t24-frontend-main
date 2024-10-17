@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
-import JumpToHyperspace from '../HyperSpace/Hyperspace';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Carousal from "../../Carousal/Carousal";
+// import JumpToHyperspace from '../HyperSpace/Hyperspace';
 
 const Hero = () => {
 
@@ -23,16 +25,46 @@ const Hero = () => {
             .fromTo('.hero-right', { y: '-3%' }, { y: '2%', duration: 2.05, delay: 2.4, ease: 'power1.inOut', repeat: -1, yoyo: true }, 0)
             .fromTo('.hero-center', { y: '0%' }, { y: '2%', duration: 2.05, delay: 2.4, ease: 'power1.inOut', repeat: 2, yoyo: true }, 0)
             .fromTo('.hero-left', { y: '-2%' }, { y: '3%', duration: 2, delay: 2.4, ease: 'power1.inOut', repeat: -1, yoyo: true }, 0)
+
+            .fromTo('.main ',{
+                scale:1,
+                duration:0.5,
+                scrollTrigger:{
+                    trigger:'.hero-center',
+                    markers:true,
+                    scrub:true,
+
+                    start:'bottom  25%',
+                    end:'top 10%',
+                    opacity:0,
+                    
+                }
+            },{
+                scale:10,
+                duration:1,
+                opacity:0
+            })
+         .fromTo('.main',{
+                scale:1
+            },{
+                opacity:0
+            })
+        .fromTo('.down',{
+            zIndex:-90
+        },{
+            zIndex:100
+        })
     }, []);
 
     return (
-        <div className='w-screen min-h-screen overflow-x-hidden flex items-center justify-center relative bg-black overflow-clip'>
-            <JumpToHyperspace />
-            <div className="absolute lg:top-[5%] top-[20%] w-full origin-center h-max z-10 flex items-center justify-center">
+        <div className='flex overflow-hidden h-screen relative'>
+        <div className={`main w-screen min-h-screen overflow-x-hidden flex items-center justify-center  bg-black overflow-clip main absolute top-0 z-100`}>
+           
+            <div className="absolute lg:top-[5%] top-[20%] w-full origin-center h-max z-[10] flex items-center justify-center">
                 <img src="/Hero/Line.svg" alt="" className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' />
             </div>
-            <div className="absolute lg:top-[4%] top-[19%] w-full origin-center h-max z-10 flex items-center justify-center">
-                <img src="/Hero/tathva_2026.webp" alt="" className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' />
+            <div className="absolute lg:top-[4%] top-[19%] w-full origin-center h-max z-[10] flex items-center justify-center">
+                <img src="/Hero/tathva_2026.webp" alt="" className='z-[-90] w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' />
             </div>
 
             {/* <div className=" scale-50 hero-center absolute origin-center top-[30%] xl:w-[20vw] lg:w-[35vw] md:w-[35vw] sm:w-[35vw] w-[65vw] z-20 bg-sky-400 ">
@@ -102,7 +134,11 @@ const Hero = () => {
                 className='hero-center absolute origin-centerlg: top-[20%] top-[40%] xl: w-[30vw] w-[30vw] lg:w-[35vw] md:w-[35vw] sm:w-[35vw] w-[65vw]'
             /> */}
         </div>
-
+        <div className='down z-[-90] left-48 absolute top-0'>
+            
+        <Carousal/>
+        </div>
+        </div>
 
     );
 };
