@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+
 @font-face {
   font-family: "Pricedown";
   src: url("/fonts/pricedown-bl.otf") format("opentype");
@@ -6,7 +8,10 @@
 }
 
 .marquee {
-  font-family: "Pricedown", sans-serif;
+  font-family: "Stick No Bills", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
   /* font-size: 9rem; */
 }
 
