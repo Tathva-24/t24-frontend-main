@@ -24,7 +24,78 @@
     padding-top:1%;
     /* letter-spacing: 0.2rem; */
     font-size: 0.685rem;
+    @media(max-width:600px){
+      font-size: 0.6rem;
+    } 
+    @media(max-width:500px){
+      font-size: 0.55rem;
+      padding: 0;
+    } 
+  }
+  .main{
+    @media(max-width:834px){
+      display: none;
+    }
   }
   .main h1{
     font-family: valorant;
   }
+  .dash{
+    background-image: url('../../../../public/Rectangle\ 1340.svg');
+
+  
+  }
+  .explore{
+    font-size: 2vw;
+    @media(max-width:1000px){
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  .nav{
+    @media(max-width:950px){
+     width: 24vw;
+    }
+  }
+  .mobile{
+    background-image: url('../../../../public/Group\ 14038.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    @media(min-width: 834px){
+      display: none;
+    }
+  }
+  .header{
+    padding-top: 50px;
+    @media(max-width:450px){
+      font-size: 7vw;
+    }
+  }
+.mobb{
+  @media(max-width:450px){
+    width: 60vw;
+    /* margin: 50px; */
+  }
+  @media(max-width:360px){
+    width: 75vw;
+    /* margin: 50px; */
+  }
+}
+.downmob{
+  height: 10vh;
+  width: 100vw;
+margin-right: 5%;
+@media(max-width:834px){
+  height: 25vh;
+  margin-right: 8%;
+  /* bottom: 50px; */
+}
+@media(max-width:650px){
+  height: 23vh;
+}
+@media(max-width:550px){
+  height: 15vh;
+  /* bottom:10; */
+}
+}
