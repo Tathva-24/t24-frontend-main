@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 900); // Adjust based on your breakpoint
+      setIsMobile(window.innerWidth < 1025); // Adjust based on your breakpoint
     };
 
     checkMobile();
