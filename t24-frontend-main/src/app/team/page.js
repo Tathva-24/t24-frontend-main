@@ -29,43 +29,11 @@ let heads = [
 ];
 
 let seniors = [
-  {
-    name: 'Nigga',
-    desig: 'Senior',
-  },
-  {
-    name: 'Skibidibop',
-    desig: 'Senior',
-  },
-  
-  {
-    name: 'polsagyipols',
-    desig: 'Senior',
-  },
-  {
-    name: 'bidyo',
-    desig: 'Seniors',
-  },
+
 ];
 
 let juniors = [
-  {
-    name: 'Nigga',
-    desig: 'Senior',
-  },
-  {
-    name: 'Skibidibop',
-    desig: 'Senior',
-  },
-  
-  {
-    name: 'polsagyipols',
-    desig: 'Senior',
-  },
-  {
-    name: 'bidyo',
-    desig: 'Seniors',
-  },
+
 ];
 
 const Page = () => {
