@@ -17,6 +17,10 @@ module.exports = {
         '120': '125%',
         '98': '98%', // Add a custom height of 60vh
       },
+      fontFamily: {
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+
 
       screens: {
         'custom-md': { 'max': '950px' }, 

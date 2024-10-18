@@ -63,7 +63,7 @@ let juniors = [
 const Page = () => {
   return (
     <>
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col bg-black'>
         <div className='flex justify-center'><img src="/team/header-heads.svg" className='block' /></div>
         <div className='flex justify-evenly m-10 flex-wrap '>
           {heads.map((el) => (
@@ -71,7 +71,7 @@ const Page = () => {
           ))}
         </div>
     </div>
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col bg-black'>
         <div className='flex justify-center'><img src="/team/header-seniors.svg" className='block' /></div>
         <div className='flex justify-evenly m-10 flex-wrap '>
           {seniors.map((el) => (
@@ -79,7 +79,7 @@ const Page = () => {
           ))}
         </div>
     </div>
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col bg-black'>
         <div className='flex justify-center'><img src="/team/header-juniors.svg" className='block' /></div>
         <div className='flex justify-evenly m-10 flex-wrap '>
           {juniors.map((el) => (

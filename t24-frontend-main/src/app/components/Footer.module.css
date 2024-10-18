@@ -1,0 +1,26 @@
+
+
+.battery1 {
+    position: absolute; /* Stack elements on top of each other */
+    animation: switch 2s infinite step-start;
+    z-index: 1000;
+
+}
+
+.battery2 {
+    position: absolute; /* Stack elements on top of each other */
+    animation: switch 2s infinite step-start;
+    animation-delay: 1s; /* Delays the appearance of the second battery by 1 second */
+    z-index: 1000;
+}
+
+/* Keyframes for switching the visibility */
+@keyframes switch {
+    0%, 50% {
+        z-index: 10;
+    }
+    50%, 100% {
+        z-index: 0;
+    }
+}
+

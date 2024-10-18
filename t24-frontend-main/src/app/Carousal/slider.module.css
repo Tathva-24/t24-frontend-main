@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden; /* Ensures the animation stays within the box */
+  border-radius: 8px;
+
+}
+
+.bannerImage {
+  border: 5px solid white;
+  object-fit: cover; /* Ensures the image fits the container properly */
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Allows images to stack on top of each other */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.slideIn {
+  transform: translateY(100%); /* Start the new image from the bottom */
+  animation: slideUp 0.5s forwards ease-in-out;
+}
+
+.slideOut {
+  transform: translateY(-100%); /* Move the old image up */
+  animation: slideOutUp 0.5s forwards ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start the new image from the bottom */
+  }
+  to {
+    transform: translateY(0); /* Bring the new image fully into the view */
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0); /* Start the old image from its current position */
+  }
+  to {
+    transform: translateY(-100%); /* Move the old image up and out of view */
+  }
+}
+
+.rightPanel {
+  gap: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text {
+  font-family: 'Supply', sans-serif;
+  font-size: 5rem;
+  font-weight: bolder;
+  letter-spacing: 0.4rem; 
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7), 0 6px 20px rgba(0, 0, 0, 0.6); /* Much darker shadow */
+  padding: 15px; 
+  
+    
+  
+  
+}
+
+@media (max-width: 600px) {
+
+  .imageContainer {
+    width: 90%; /* Use more width for smaller screens */
+    height: auto; /* Allow height to adjust based on width */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+  }
+
+  .bannerImage {
+    border-width: 3px; /* Thinner border for smaller screens */
+  }
+
+  .text {
+    font-size: 3rem; /* Reduce font size on smaller screens */
+    letter-spacing: 0.2rem; /* Adjust letter spacing */
+  }
+
+  .leftPanel, .rightPanel {
+    flex: 1 1 100%; /* Allow both panels to take full width */
+    justify-content: center; /* Center align items */
+  }
+
+  .rightPanel{
+    margin-left: 20px;
+  }
+}

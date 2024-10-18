@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Tathva 24",
-  description: "Welcome to Tathva 24, South India's largest techno-management fest",
+  description: "Welcome to Tathva 24, South India &apos; s largest techno-management fest",
 };
 
 export default function RootLayout({ children }) {

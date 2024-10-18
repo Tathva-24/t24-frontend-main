@@ -26,7 +26,7 @@ const DesktopComponent = () => {
             <div className="mb-4">
               <p className="text-white">
                 National Institute of Technology, Calicut, presents Tathva
-                Interface - Asia's largest student-run Tech Startup Expo. We at
+                Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
                 the Tathva Interface aim to provide a platform for
                 all-entrepreneurs.
               </p>
@@ -56,7 +56,7 @@ const MobileComponent = () => {
             <img src="/expo.svg" className="ml-3 select-none	" />
             <p className="text-justify text-center px-3 text-white">
               National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia's largest student-run Tech Startup Expo. We at
+              Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
               the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>
@@ -85,9 +85,9 @@ const TabComponent = () => {
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col">
             <img src="/expo.svg" className="ml-3 select-none	" />
-            <p className="text-justify text-center mx-3 text-white ">
+            <p className=" text-center mx-3 text-white ">
               National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia's largest student-run Tech Startup Expo. We at
+              Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
               the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>

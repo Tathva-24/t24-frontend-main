@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "SupplyBold";
+    src: url("/fonts/SupplyBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "SupplyRegular";
+    src: url("/fonts/SupplyRegular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .supplybold {
+    font-family: "SupplyBold", sans-serif;
+  }
+
+  .supplyregular {
+    font-family: "SupplyRegular", sans-serif;
+  }

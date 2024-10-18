@@ -18,19 +18,19 @@ const Marque = () => {
     <section className="relative bg-white text-black text-base overflow-x-hidden w-screen font-semibold">
       <div className="marquecontainer flex whitespace-nowrap">
         <div className="marqueitem p-[10px] pr-[30px]">
-          National Institute of Technology, Calicut, presents Tathva Interface - Asia's largest student-run Tech Startup Expo.
+          National Institute of Technology, Calicut, presents Tathva Interface - Asia&apos;s largest student-run Tech Startup Expo.
         </div>
         <div className="marqueitem p-[10px] pr-[30px]">
-          National Institute of Technology, Calicut, presents Tathva Interface - Asia's largest student-run Tech Startup Expo.
+          National Institute of Technology, Calicut, presents Tathva Interface - Asia&apos;s largest student-run Tech Startup Expo.
         </div>
         <div className="marqueitem p-[10px] pr-[30px]">
-          National Institute of Technology, Calicut, presents Tathva Interface - Asia's largest student-run Tech Startup Expo.
+          National Institute of Technology, Calicut, presents Tathva Interface - Asia&apos;s largest student-run Tech Startup Expo.
         </div>
         <div className="marqueitem p-[10px] pr-[30px]">
-          National Institute of Technology, Calicut, presents Tathva Interface - Asia's largest student-run Tech Startup Expo.
+          National Institute of Technology, Calicut, presents Tathva Interface - Asia&apos;s largest student-run Tech Startup Expo.
         </div>
         <div className="marqueitem p-[10px] pr-[30px]">
-          National Institute of Technology, Calicut, presents Tathva Interface - Asia's largest student-run Tech Startup Expo.
+          National Institute of Technology, Calicut, presents Tathva Interface - Asia&apos;s largest student-run Tech Startup Expo.
         </div>
       </div>
     </section>

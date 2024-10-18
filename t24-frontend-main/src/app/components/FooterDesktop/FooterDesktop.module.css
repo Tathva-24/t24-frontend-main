@@ -1,0 +1,30 @@
+.foot_mob {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    background-color: rgba(49, 50, 52, 1);
+  }
+  
+  /* 
+  @media (min-width: 600px)
+  {
+      .foot_mob{
+          display: none;
+      }
+  } */
+  
+  .button {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -1.2rem;
+    }
+  
+  @media (max-width: 380px) {
+    .button {
+      display: none;
+    }
+  }
+  
