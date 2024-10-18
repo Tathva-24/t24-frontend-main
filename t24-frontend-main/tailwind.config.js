@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily : {
+        akira : ['"Akira Expanded"','sans-serif']
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
