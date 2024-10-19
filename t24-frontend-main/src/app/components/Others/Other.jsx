@@ -3,6 +3,7 @@ import InnerDescription from "./InnerDescription";
 import NewDesc from "./newdesc";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const OthersLanding = () => {
   const ref1 = useRef(null);
@@ -47,14 +48,14 @@ const OthersLanding = () => {
   return (
     <div ref={ref1} className="bg-black lg:px-[5%] pb-5 overflow-x-hidden">
       <div ref={ref2} className="flex w-full ">
-        <div className="w-[100%] sm:w-[62%] p-5">
+        <Link href='/team' className="w-[100%] sm:w-[62%] p-5">
           <InnerDescription
             heading={"Meet The Team"}
             text={
-              "Team tathva brings the backbone of Tathva 24’ Glance through the people who make the magic behind stage happen"
+              'Team tathva brings the backbone of Tathva 24&apos; Glance through the people who make the magic behind stage happen'
             }
           />
-        </div>
+        </Link>
         <div className="hidden sm:block  w-[38%] p-5">
           <img
             src="mtt.webp"
@@ -70,14 +71,14 @@ const OthersLanding = () => {
             className=" w-full h-full object-cover rounded-3xl border-white border-2"
           />
         </div>
-        <div className="sm:w-2/3 w-screen p-5">
+        <Link href='/faq' className="sm:w-2/3 w-screen p-5">
           <InnerDescription
             heading={"We've Got FAQ"}
             text={
               "We at tathva team have compiled a list of queries we’ve got and answered some frequently asked questions."
             }
           />
-        </div>
+        </Link>
       </div>
 
       <div className="flex w-full">
