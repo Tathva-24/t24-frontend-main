@@ -157,8 +157,8 @@ export default function Home() {
 
       <div className="text-container2 h-[50vh] opacity-0">
         <div className="w-full h-full">
-          <div className="upppercase w-full h-full text-white flex flex-col items-center ">
-            <p className="text-5xl md:text-8xl lg:text-9xl text-pricedown">And much More... </p>
+          <div className="upppercase w-full h-full text-white flex flex-col items-center  justify-center ">
+            <p className="text-3xl md:text-8xl lg:text-9xl text-pricedown">And much More... </p>
           </div>
         </div>
       </div>

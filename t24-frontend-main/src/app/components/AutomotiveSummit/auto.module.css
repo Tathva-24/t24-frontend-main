@@ -59,7 +59,7 @@
     }
   }
   .mobile{
-    background-image: url('../../../../public/Group\ 14038.svg');
+    background-image: url('/Group\ 14038.svg');
     background-position: center;
     background-repeat: no-repeat;
     /* background-size: fill; */
