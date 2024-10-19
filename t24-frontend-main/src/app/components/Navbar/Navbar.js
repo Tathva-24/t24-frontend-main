@@ -24,15 +24,15 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("resize", checkMobile);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
-    <div className="relative">
+    <div className="relative ">
       {/* Check if the screen is mobile */}
       {isMobile ? (
         <Navbar_mob />
       ) : (
-        <>
+        <div className="hidden md:block">
           {/* Hamburger Icon for larger screens */}
           {!isOpen && ( // Only show the hamburger if the menu is closed
             <button
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* Slide Down Menu */}
           <div
-            className={`fixed inset-0 z-10 transition-transform ease-in-out ${
+            className={` fixed inset-0 z-10 transition-transform ease-in-out ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             }`}
           >
@@ -96,7 +96,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

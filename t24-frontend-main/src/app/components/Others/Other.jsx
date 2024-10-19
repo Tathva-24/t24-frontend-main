@@ -35,12 +35,12 @@ const OthersLanding = () => {
     };
 
     // Apply animations on all referenced elements
-    animateOnScroll(ref2, "top 30%");
-    animateOnScroll(ref3, "top 40%");
-    animateOnScroll(ref4, "top 45%");
-    animateOnScroll(ref5, "top 50%");
-    animateOnScroll(ref6, "top 55%");
-    animateOnScroll(ref7, "top 60%");
+    animateOnScroll(ref2, "top 70%");
+    animateOnScroll(ref3, "top 75%");
+    animateOnScroll(ref4, "top 85%");
+    animateOnScroll(ref5, "top 90%");
+    animateOnScroll(ref6, "top 95%");
+    animateOnScroll(ref7, "top 100%");
 
   }, []);
 

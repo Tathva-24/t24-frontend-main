@@ -10,7 +10,7 @@ const Navbar_mob = () => {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative block md:hidden ">
       {/* Hamburger/Close Icon */}
       <div
         className="fixed top-4 pt-6 left-1  z-50 cursor-pointer"
