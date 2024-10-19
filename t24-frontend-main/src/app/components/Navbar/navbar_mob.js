@@ -42,7 +42,7 @@ const Navbar_mob = () => {
         ></div>
 
         <nav className="relative flex pl-11 pr-2 flex-col justify-start items-center space-y-3 pt-10 overflow-y-auto h-full py-3">
-          <Link href="/home" className="p-2">
+          <Link href="/" className="p-2">
             <img src="/homebg.svg" alt="Home" className="w-30 h-16" />
           </Link>
           <Link href="/expo" className="p-2">
