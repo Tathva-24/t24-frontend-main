@@ -1,11 +1,10 @@
-.color1 {
-    background-color: #64CBCC;
-}
-
-.color2 {
-    background-color: #AF05FF;
-}
-
-.color3 {
-    background-color: #FF8C05;
+.c1 {
+    background-image: url("/team/main_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
