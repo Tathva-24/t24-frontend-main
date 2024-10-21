@@ -13,9 +13,9 @@ const col = {
 
 const TeamCard = ({details,color,className}) => {
   const bg = col[color];
-  return (
-    <div className={`${styles.c1} w-[18vw] h-[20vw] m-10`}>
-        
+  return ( 
+    <div className={`${styles.c1} w-[100vw] h-[60vh] sm:w-[18vw] sm:h-[20vw] m-10`}>
+        <img src={details.img} className='aspect-square overflow-clip w-[60%] h-[60%]'/>
     </div>
   )
 }

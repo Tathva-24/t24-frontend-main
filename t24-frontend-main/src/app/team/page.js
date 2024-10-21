@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamCard from '../components/team_card/TeamCard';
+import Juniorteamcard from '../juniorseniorteamcard/Juniorteamcard';
 let heads = [
   {
     name: 'Arun Nats',
@@ -29,11 +30,59 @@ let heads = [
 ];
 
 let seniors = [
-
+  {
+    name: 'Arun Nats',
+    desig: 'Backend',
+    img: "/team/arun.jpeg"
+  },
+  {
+    name: 'Vinit Keshri',
+    desig: 'Frontend',
+    img: "/team/vinit.jpg"
+  },
+  {
+    name: 'Nirmal Fageria',
+    desig: 'Frontend',
+    img :  "/team/niram_f.jpg"
+  },
+  {
+    name: 'Aditya Pandey',
+    desig: 'App Dev',
+    img : "/team/pandey.jpeg"
+  },
+  { 
+    name: 'Aarizz',
+    desig: 'UI/UX',
+    img : "/team/aariz.jpg"
+  }
 ];
 
 let juniors = [
-
+  {
+    name: 'Arun Nats',
+    desig: 'Backend',
+    img: "/team/arun.jpeg"
+  },
+  {
+    name: 'Vinit Keshri',
+    desig: 'Frontend',
+    img: "/team/vinit.jpg"
+  },
+  {
+    name: 'Nirmal Fageria',
+    desig: 'Frontend',
+    img :  "/team/niram_f.jpg"
+  },
+  {
+    name: 'Aditya Pandey',
+    desig: 'App Dev',
+    img : "/team/pandey.jpeg"
+  },
+  { 
+    name: 'Aarizz',
+    desig: 'UI/UX',
+    img : "/team/aariz.jpg"
+  }
 ];
 
 const Page = () => {
@@ -51,7 +100,7 @@ const Page = () => {
         <div className='flex justify-center'><img src="/team/seniors.png" className='block' /></div>
         <div className='flex justify-evenly m-10 flex-wrap '>
           {seniors.map((el) => (
-            <TeamCard className="mb-[3%]" details = {el} color="color2"/>
+            <Juniorteamcard className="mb-[3%]" details = {el} color="color2"/>
           ))}
         </div>
     </div>
@@ -59,7 +108,7 @@ const Page = () => {
         <div className='flex justify-center'><img src="/team/juniors.png" className='block' /></div>
         <div className='flex justify-evenly m-10 flex-wrap '>
           {juniors.map((el) => (
-            <TeamCard className="mb-[3%]" details = {el} color="color3"/>
+            <Juniorteamcard className="mb-[3%]" details = {el} color="color3"/>
           ))}
         </div>
     </div>

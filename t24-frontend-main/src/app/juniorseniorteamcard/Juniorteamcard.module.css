@@ -1,0 +1,10 @@
+.c1 {
+    background-image: url("/team/juniorcard.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
